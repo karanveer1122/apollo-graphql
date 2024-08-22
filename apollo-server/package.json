@@ -1,0 +1,31 @@
+{
+  "name": "apollo-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js",
+    "codegen": "graphql-codegen --config codegen.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/datasource-rest": "^6.3.0",
+    "@apollo/server": "^4.11.0",
+    "@graphql-tools/utils": "^10.5.4",
+    "apollo-server": "^3.13.0",
+    "dotenv": "^16.4.5",
+    "graphql": "^16.9.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.2",
+    "@types/node": "^22.4.2",
+    "typescript": "^5.5.4",
+    "@graphql-codegen/client-preset": "4.3.3",
+    "@graphql-codegen/typescript": "4.0.9",
+    "@graphql-codegen/flow": "3.0.0",
+    "@graphql-codegen/typescript-document-nodes": "4.0.9"
+  }
+}
